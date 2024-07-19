@@ -1,0 +1,119 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import electricalcover from "../assets/featured/electrical.jpg";
+import electrical1 from "../assets/install_pictures/electrical/doris-morgan-mXUFJ1U2AeA-unsplash.jpg";
+import electrical2 from "../assets/install_pictures/electrical/troy-bridges-kXC6XhVL1e4-unsplash.jpg";
+import electrical3 from "../assets/install_pictures/electrical/fahim-junaid-7MjXpkxFseU-unsplash.jpg";
+import electrical4 from "../assets/install_pictures/electrical/andre-spilborghs-m0soIvqOY-Q-unsplash.jpg";
+import electrical5 from "../assets/install_pictures/electrical/scott-webb-tYa2Myli6qE-unsplash.jpg";
+import electrical6 from "../assets/install_pictures/electrical/mostafa-mahmoudi-47jO5Y8nsYo-unsplash.jpg";
+---
+
+<MainLayout>
+  <div class="container my-8 lg:my-24 mx-auto md:px-6">
+    <section class="lg:mb-32">
+      <div class="container mx-auto text-center lg:text-left xl:px-32">
+        <div
+          class="flex flex-col-reverse gap-2 lg:grid items-center lg:grid-cols-2"
+        >
+          <div class="mb-12 lg:mb-0">
+            <div
+              class="relative z-[1] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] bg-base-200 shadow-black/20 md:px-12 lg:-mr-14"
+            >
+              <h2 class="mb-8 text-3xl font-bold">Electrical Services</h2>
+              <p class="mb-8 pb-2 text-neutral-300 lg:pb-0">
+                <ul>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Lighting Systems</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Electrical Outlets</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >UPS Systems</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Parking Lot Systems</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Generator Systems</strong
+                    >
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <Image
+              class="w-full rounded-lg shadow-lg shadow-black/20"
+              src={electricalcover}
+              alt="Veritas data cabling installation"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container mx-auto px-5 py-2 lg:px-32">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={electrical1}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={electrical2}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-full p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={electrical3}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={electrical4}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={electrical5}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={electrical6}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

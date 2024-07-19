@@ -1,0 +1,57 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/footer.astro";
+import SideBar from "../components/SideBar.astro";
+import MainHead from "./MainHead.astro";
+import { ViewTransitions } from "astro:transitions";
+const {
+  title,
+  seoTitle,
+  seoDescription,
+  includeSidebar = true,
+  sideBarActiveItemID,
+} = Astro.props;
+---
+
+<html lang="en" data-theme="business">
+  <MainHead title={title} seoTitle={seoTitle} seoDescription={seoDescription} />
+  <ViewTransitions />
+  <body>
+    <div class="bg-base-100 drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content bg-base-100">
+        <Header />
+        <div class="flex flex-col justify-between min-h-[90vh]">
+          <main>
+            <slot />
+          </main>
+          <Footer />
+        </div>
+      </div>
+      {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
+    </div>
+    <script>
+      document.addEventListener("astro:page-load", () => {
+        Navbar();
+      });
+      function Navbar() {
+        // Animated navbar
+
+        // We store the navbar element in a variable using the getElementById method and the id of the navbar
+        const animatedNavbar = document.getElementById("animated-navbar");
+
+        // We add class .bg-red-500 to the navbar when the user scrolls down, and remove it when the navbar is at the top of the page
+        window.addEventListener("scroll", function () {
+          // If windows.scrollY > 0 (that means the user has scrolled down) we add class .bg-red-500 to the navbar
+          if (window.scrollY > 10) {
+            animatedNavbar.classList.add("bg-base-100");
+
+            // If windows.scrollY = 0 (that means the navbar is at the top of the page) we remove class .bg-red-500 from the navbar
+          } else {
+            animatedNavbar.classList.remove("bg-base-100");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

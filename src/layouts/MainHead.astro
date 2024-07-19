@@ -1,0 +1,68 @@
+---
+import { SEO } from "astro-seo";
+const { title = "Veritas", seoTitle = "Veritas", seoDescription } = Astro.props;
+import { Head } from "astro-capo";
+---
+
+<Head>
+  <SEO title={seoTitle} description={seoDescription} />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="theme-color" content="#202020" />
+  <title>{title}</title>
+
+  <!-- HTML Meta Tags -->
+  <title>Veritas Managed Solutions, inc.</title>
+  <meta
+    name="description"
+    content="Cabling and installation of low voltage systems, wireless, security, AV, electrical"
+  />
+
+  <!-- Google Meta Tags -->
+  <meta
+    name="google-site-verification"
+    content="Yu9SkilXZxroQxR2lrdEThXKqiDu8vv--OKbZiTuNag"
+  />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://veritas-inc.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Veritas Managed Solutions, inc." />
+  <meta
+    property="og:description"
+    content="Cabling and installation of low voltage systems, wireless, security, AV, electrical"
+  />
+  <meta
+    property="og:image"
+    content="https://opengraph.b-cdn.net/production/documents/afa04d3d-04df-428f-80c1-d2f7b1ae2e9f.jpg?token=ONaEV9hNftCV3XwLMH6BQlRbNLIBuHWWCz-NhgNf9ws&height=694&width=1200&expires=33243117662"
+  />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="veritas-inc.com" />
+  <meta property="twitter:url" content="https://veritas-inc.com/" />
+  <meta name="twitter:title" content="Veritas Managed Solutions, inc." />
+  <meta
+    name="twitter:description"
+    content="Cabling and installation of low voltage systems, wireless, security, AV, electrical"
+  />
+  <meta
+    name="twitter:image"
+    content="https://opengraph.b-cdn.net/production/documents/afa04d3d-04df-428f-80c1-d2f7b1ae2e9f.jpg?token=ONaEV9hNftCV3XwLMH6BQlRbNLIBuHWWCz-NhgNf9ws&height=694&width=1200&expires=33243117662"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&family=Roboto+Mono:wght@200&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20"
+    rel="stylesheet"
+  />
+</Head>

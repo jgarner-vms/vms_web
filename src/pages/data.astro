@@ -1,0 +1,236 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import datacover from "../assets/featured/Fiber.jpeg";
+import data1 from "../assets/install_pictures/data/data1.jpg";
+import data2 from "../assets/install_pictures/data/data2.jpg";
+import data3 from "../assets/install_pictures/data/data3.jpg";
+import data4 from "../assets/install_pictures/data/data4.jpg";
+import data5 from "../assets/install_pictures/data/data5.jpg";
+import data6 from "../assets/install_pictures/data/data6.jpg";
+---
+
+<MainLayout>
+  <!-- Container for demo purpose -->
+  <div class="container my-8 lg:my-24 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="lg:mb-32">
+      <!-- Jumbotron -->
+      <div class="container mx-auto text-center lg:text-left xl:px-32">
+        <div
+          class="flex flex-col-reverse gap-2 lg:grid items-center lg:grid-cols-2"
+        >
+          <div class="mb-12 lg:mb-0">
+            <div
+              class="relative z-[1] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] bg-base-200 shadow-black/20 md:px-12 lg:-mr-14"
+            >
+              <h2 class="mb-8 text-3xl font-bold">Cable Infrastructure</h2>
+              <p class="mb-8 pb-2 text-neutral-300 lg:pb-0">
+                <ul>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Copper Category 6/6a</strong
+                    > - UTP & F/UTP Solutions
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Fiber Optic</strong
+                    > - OM3/4 & OS2 Cable Plants
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Data Center</strong
+                    > - LC & MTP/MPO Infrastructures
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Outside Plant</strong
+                    > - Fiber Optic and High Pair Copper
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <Image
+              class="w-full rounded-lg shadow-lg shadow-black/20"
+              src={datacover}
+              alt="Veritas data cabling installation"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Jumbotron -->
+    </section>
+    <!-- Section: Design Block -->
+  </div>
+  <!-- Container for demo purpose -->
+
+  <div class="container mx-auto mb-12 lg:mb-0">
+    <div
+      class="relative z-[1] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] bg-base-200 shadow-black/20 mx-5 md:px-12 lg:mx-32"
+    >
+      <h2 class="mb-8 text-2xl lg:text-3xl font-bold">
+        Our data installations include:
+      </h2>
+
+      <div
+        class="mx-auto mb-8 flex flex-col md:justify-around lg:justify-between"
+      >
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Structured Cabling
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas engineers structured cabling for commercial, high end
+          residential, and public buildings. We follow all standards and adhere
+          to proper cable support guidelines. After installing the cable we
+          label and provide certified test results.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Fiber
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas engineers fiber optics solutions for customers who demand the
+          highest speeds and bandwidths from their communication pipelines. Our
+          fiber systems dramatically improve long distance network connections
+          for the most critical projects.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Server Rooms
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas performs complete IT room buildouts from anchoring and
+          grounding cabinets to installing network switches and power systems.
+          Our technicians are trained to clearly label our cables, with well
+          organised and visually pleasing wiring.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Infrastructure Installation
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas installs all the infrastructure related to cable pathways and
+          server room design. This includes cable trays, conduit, Unistrut,
+          threaded rods, and J hook supports.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container mx-auto px-5 py-2 lg:px-32">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={data3}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={data2}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-full p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={data6}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={data4}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={data5}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={data1}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

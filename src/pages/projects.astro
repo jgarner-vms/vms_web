@@ -1,0 +1,191 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import wirelesscover from "../assets/featured/Wireless.jpeg";
+import securitycover from "../assets/featured/security.jpg";
+import datacover from "../assets/featured/Fiber.jpeg";
+import avcover from "../assets/featured/AudioVisual.jpeg";
+import consultationcover from "../assets/featured/consultation.jpg";
+import electricalcover from "../assets/featured/electrical.jpg";
+import ITcover from "../assets/featured/IT.jpg";
+import managedservicescover from "../assets/featured/managedservices.jpg";
+---
+
+<MainLayout
+  title="Veritas | Projects"
+  seoTitle="Veritas | Projects"
+  seoDescription="List of low voltage project types completed by Veritas for nationwide projects"
+>
+  <section class="w-8/12 lg:w-6/12 mx-auto">
+    <div>
+      <p class="text-4xl text-center my-5">Managed Solutions</p>
+    </div>
+  </section>
+  <section>
+    <div class="my-6 text-center">
+      <div class="stats stats-vertical lg:stats-horizontal shadow">
+        <div class="stat">
+          <div class="stat-title">Technicians</div>
+          <div class="stat-value" id="technicianstat"></div>
+          <div class="stat-desc">↗︎ 42 YoY (+34%)</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-title">Completed Projects</div>
+          <div class="stat-value" id="projectstat"></div>
+          <div class="stat-desc">↗︎ 2360 YoY (+22%)</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-title">Partners</div>
+          <div class="stat-value" id="partnerstat"></div>
+          <div class="stat-desc">↗︎ 6 (+14%)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="mt-8 p-6 grid grid-flow-row lg:grid-cols-2 gap-6 shadow-accent justify-around justify-items-center"
+  >
+    <a href="/data">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={datacover}
+            class="object-cover object-center"
+            alt="Veritas server rack installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Cable Infrastructure</h2>
+          <p>Explore the options to build or renovate your network</p>
+        </div>
+      </div>
+    </a>
+    <a href="/wireless">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={wirelesscover}
+            class="object-cover object-center"
+            alt="Veritas access point installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Wireless Services</h2>
+          <p>Find out more about wireless projects completed nationwide</p>
+        </div>
+      </div>
+    </a>
+    <a href="/av">
+      <div
+        class="card lg:card-side image-full bg-base-100 shadow-xl transition-all hover:brightness-150 hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={avcover}
+            class="object-cover object-center"
+            alt="Veritas conference room setup"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Audio and Visual</h2>
+          <p>Modern solutions prepared to improve your workflow</p>
+        </div>
+      </div>
+    </a>
+    <a href="/security">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={securitycover}
+            class="object-cover object-center"
+            alt="Veritas security panel installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Security Services</h2>
+          <p>
+            Secure your locations with card access, burglar and alarm systems
+          </p>
+        </div>
+      </div>
+    </a>
+    <a href="/IT">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={ITcover}
+            class="object-cover object-center"
+            alt="Veritas security panel installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Information Technology</h2>
+          <p>Software, troubleshooting and desktop support</p>
+        </div>
+      </div>
+    </a>
+    <a href="/managedservices">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={managedservicescover}
+            class="object-cover object-center"
+            alt="Veritas security panel installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Managed Services</h2>
+          <p>Network systems, server management and smart hands</p>
+        </div>
+      </div>
+    </a>
+    <a href="/electrical">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={electricalcover}
+            class="object-cover object-center"
+            alt="Veritas security panel installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Electrical</h2>
+          <p>Lighting, outlets, generator, parking lot systems</p>
+        </div>
+      </div>
+    </a>
+    <a href="/consultation">
+      <div
+        class="card lg:card-side hover:brightness-150 image-full bg-base-100 shadow-xl transition-all hover:scale-105 w-full min-h-full max-h-96 overflow-hidden"
+      >
+        <figure>
+          <Image
+            src={consultationcover}
+            class="object-cover object-center"
+            alt="Veritas security panel installation"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Consultation</h2>
+          <p>Consultation, design and project management</p>
+        </div>
+      </div>
+    </a>
+  </section>
+</MainLayout>
+
+<script src="../scripts/projectsscript.ts"></script>

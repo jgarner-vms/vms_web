@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ContactInfo from "./contactinfo.astro";
+import ContactForm from "./contactform.astro";
+import Locations from "../components/map.astro";
+---
+
+<MainLayout
+  title="Veritas | Contact"
+  seoTitle="Veritas | Contact"
+  seoDescription="Address, email, phone number and request form for prospective customers"
+>
+  <section class="scroll-mt-16 h-fit my-3 w-full" id="contactinfo">
+    <ContactInfo />
+  </section>
+  <section
+    class="h-fit w-full overflow-hidden mx-auto bg-base-100"
+    id="locations"
+  >
+    <Locations />
+  </section>
+  <section class="scroll-mt-16 w-full" id="contactform">
+    <ContactForm />
+  </section>
+</MainLayout>
+
+<script src="../scripts/aboutscript.ts"></script>

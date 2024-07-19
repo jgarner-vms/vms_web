@@ -1,0 +1,126 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import managedservicescover from "../assets/featured/managedservices.jpg";
+import managedservices1 from "../assets/install_pictures/managedservices/damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg";
+import managedservices2 from "../assets/install_pictures/managedservices/israel-andrade-YI_9SivVt_s-unsplash.jpg";
+import managedservices3 from "../assets/install_pictures/managedservices/john-schnobrich-FlPc9_VocJ4-unsplash.jpg";
+import managedservices4 from "../assets/install_pictures/managedservices/lycs-architecture-U2BI3GMnSSE-unsplash.jpg";
+import managedservices5 from "../assets/install_pictures/managedservices/mohammad-rahmani-8OnkIkFBBtM-unsplash.jpg";
+import managedservices6 from "../assets/install_pictures/managedservices/thisisengineering-SyRlD4s_amw-unsplash.jpg";
+---
+
+<MainLayout>
+  <!-- Container for demo purpose -->
+  <div class="container my-8 lg:my-24 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="lg:mb-32">
+      <!-- Jumbotron -->
+      <div class="container mx-auto text-center lg:text-left xl:px-32">
+        <div
+          class="flex flex-col-reverse gap-2 lg:grid items-center lg:grid-cols-2"
+        >
+          <div class="mb-12 lg:mb-0">
+            <div
+              class="relative z-[1] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] bg-base-200 shadow-black/20 md:px-12 lg:-mr-14"
+            >
+              <h2 class="mb-8 text-3xl font-bold">Managed Services</h2>
+              <p class="mb-8 pb-2 text-neutral-300 lg:pb-0">
+                <ul>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Network Systems</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Desktop Support</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent">Servers</strong>
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Network Systems</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent">Software</strong>
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Smart Hands</strong
+                    >
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <Image
+              class="w-full rounded-lg shadow-lg shadow-black/20"
+              src={managedservicescover}
+              alt="Veritas data cabling installation"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Jumbotron -->
+    </section>
+    <!-- Section: Design Block -->
+  </div>
+  <!-- Container for demo purpose -->
+
+  <div class="container mx-auto px-5 py-2 lg:px-32">
+    <div class="-m-1 flex flex-wrap md:-m-2">
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={managedservices1}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={managedservices2}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-full p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={managedservices3}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+      </div>
+      <div class="flex w-1/2 flex-wrap">
+        <div class="w-full p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={managedservices4}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={managedservices5}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+        <div class="w-1/2 p-1 md:p-2">
+          <Image
+            class="block h-full w-full rounded-lg object-cover object-center hover:scale-105 transition-all"
+            src={managedservices6}
+            alt="Veritas data cabling installation"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

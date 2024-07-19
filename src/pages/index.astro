@@ -1,0 +1,286 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import coverpicture from "../assets/featured/lars-kienle-IlxX7xnbRF8-unsplash.jpg";
+import gameexample1 from "../assets/featured/honeywellgame.png";
+import gameexample2 from "../assets/featured/thisisengineering-raeng-hoivM01c-vg-unsplash.jpg";
+import bgvideomp4 from "../assets/background/networkbg.mp4";
+---
+
+<MainLayout
+  title="Veritas Managed Solutions, inc."
+  seoTitle="Veritas Managed Solutions, inc."
+  seoDescription="Cabling and installation of low voltage systems, wireless, security, AV, electrical"
+>
+  <div class="hero min-w-screen h-[90vh] overflow-hidden">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="absolute z-10 top-0 object-cover min-w-full h-screen brightness-75"
+      id="BGvideo"
+      src={bgvideomp4}>Your browser does not support the video tag.</video
+    >
+    <div class="absolute inset-0 z-20 overflow-hidden">
+      <svg
+        class="absolute left-[max(50%,25rem)] top-0 h-screen w-[128rem] -translate-x-1/2 stroke-primary [mask-image:linear-gradient(transparent_60%,black)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+            width="200"
+            height="200"
+            x="50%"
+            y="-1"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+          </pattern>
+        </defs>
+        <rect
+          width="100%"
+          height="100%"
+          stroke-width="0"
+          fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+      </svg>
+    </div>
+    <div class="hero-content text-center z-20">
+      <div
+        class="max-w-2xl flex flex-col justify-between text-base-content gap-5"
+      >
+        <h1
+          class="text-7xl font-bold hidden lg:inline pointer-events-none"
+          id="title"
+        >
+          Veritas Managed Solutions, inc.
+        </h1>
+        <h1
+          class="h-[120px] lg:h-[130px] text-4xl lg:text-6xl pointer-events-none justify-center flex flex-row items-center"
+          id="scramble"
+        >
+          Low Voltage
+        </h1>
+        <div class="w-full">
+          <a href="/projects">
+            <button class="btn btn-primary"
+              >Solutions<svg
+                class="ml-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path></svg
+              ></button
+            ></a
+          >
+          <a href="/about#contactform">
+            <button class="btn btn-outline">Contact Us</button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="relative isolate overflow-hidden bg-base-300 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+  >
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <svg
+        class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-primary [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+            width="200"
+            height="200"
+            x="50%"
+            y="-1"
+            patternUnits="userSpaceOnUse"
+          >
+            <path d="M100 200V.5M.5 .5H200" fill="none"></path>
+          </pattern>
+        </defs>
+        <rect
+          width="100%"
+          height="100%"
+          stroke-width="0"
+          fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"></rect>
+      </svg>
+    </div>
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
+    >
+      <div
+        class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+      >
+        <div class="lg:pr-4">
+          <div class="lg:max-w-lg">
+            <p class="text-base font-semibold leading-7 text-accent">
+              Backed with experience
+            </p>
+            <h1
+              class="mt-2 text-3xl font-bold tracking-tight text-base-content sm:text-4xl"
+            >
+              Smart Technology
+            </h1>
+            <p class="mt-6 text-xl leading-8 text-base-content">
+              Veritas Managed Solutions is a leading provider of
+              <strong>integrated systems</strong> in commercial, hospitality, industrial
+              and office environments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+      >
+        <Image
+          src={coverpicture}
+          class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+          alt="example of Veritas cabling installation"
+        />
+      </div>
+      <div
+        class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+      >
+        <div class="lg:pr-4">
+          <div
+            class="max-w-xl text-base leading-7 text-base-content lg:max-w-lg"
+          >
+            <ul role="list" class="mt-8 space-y-8 text-base-content">
+              <li class="flex gap-x-3">
+                <svg
+                  class="mt-1 h-6 w-6 flex-none text-accent"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9 15a6 6 0 1 1 12 0 6 6 0 0 1-12 0Zm3.845-1.855a2.4 2.4 0 0 1 1.2-1.226 1 1 0 0 1 1.992-.026c.426.15.809.408 1.111.749a1 1 0 1 1-1.496 1.327.682.682 0 0 0-.36-.213.997.997 0 0 1-.113-.032.4.4 0 0 0-.394.074.93.93 0 0 0 .455.254 2.914 2.914 0 0 1 1.504.9c.373.433.669 1.092.464 1.823a.996.996 0 0 1-.046.129c-.226.519-.627.94-1.132 1.192a1 1 0 0 1-1.956.093 2.68 2.68 0 0 1-1.227-.798 1 1 0 1 1 1.506-1.315.682.682 0 0 0 .363.216c.038.009.075.02.111.032a.4.4 0 0 0 .395-.074.93.93 0 0 0-.455-.254 2.91 2.91 0 0 1-1.503-.9c-.375-.433-.666-1.089-.466-1.817a.994.994 0 0 1 .047-.134Zm1.884.573.003.008c-.003-.005-.003-.008-.003-.008Zm.55 2.613s-.002-.002-.003-.007a.032.032 0 0 1 .003.007ZM4 14a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm3-2a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0v-6a1 1 0 0 1 1-1Zm6.5-8a1 1 0 0 1 1-1H18a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-.796l-2.341 2.049a1 1 0 0 1-1.24.06l-2.894-2.066L6.614 9.29a1 1 0 1 1-1.228-1.578l4.5-3.5a1 1 0 0 1 1.195-.025l2.856 2.04L15.34 5h-.84a1 1 0 0 1-1-1Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span
+                  ><strong class="font-semibold text-accent"
+                    >Cost-effective solutions.</strong
+                  > We are committed to providing
+                  <strong>innovative solutions</strong> that are tailored to the
+                  specific needs of each client, ensuring that our projects are completed
+                  within budget.</span
+                >
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="mt-1 h-6 w-6 flex-none text-accent"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                    clip-rule="evenodd"></path>
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span
+                  ><strong class="font-semibold text-accent"
+                    >Strong communication.</strong
+                  > All our work is completed with <strong
+                    >extensive documentation</strong
+                  > on our part, matching the customer's expectations to plans.</span
+                >
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="mt-1 h-6 w-6 flex-none text-accent"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 6a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm-1.5 8a4 4 0 0 0-4 4 2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-3Zm6.82-3.096a5.51 5.51 0 0 0-2.797-6.293 3.5 3.5 0 1 1 2.796 6.292ZM19.5 18h.5a2 2 0 0 0 2-2 4 4 0 0 0-4-4h-1.1a5.503 5.503 0 0 1-.471.762A5.998 5.998 0 0 1 19.5 18ZM4 7.5a3.5 3.5 0 0 1 5.477-2.889 5.5 5.5 0 0 0-2.796 6.293A3.501 3.501 0 0 1 4 7.5ZM7.1 12H6a4 4 0 0 0-4 4 2 2 0 0 0 2 2h.5a5.998 5.998 0 0 1 3.071-5.238A5.505 5.505 0 0 1 7.1 12Z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span
+                  ><strong class="font-semibold text-accent"
+                    >Lasting relationships.</strong
+                  > Our <strong>commitment to excellence</strong> makes us the first
+                  choice for new startup businesses and existing customers continuing
+                  their expansion.</span
+                >
+              </li>
+            </ul>
+            <p class="mt-8">
+              Our technicians and project managers are dedicated to delivering
+              high-quality services to you, regardless of the size or complexity
+              of the project.
+            </p>
+            <h2 class="mt-16 text-2xl font-bold tracking-tight text-accent">
+              History of success
+            </h2>
+            <p class="mt-6">
+              From its 2009 origins as a small business, Veritas has rapidly
+              grown into a leading nationwide systems integrator. With a
+              relentless focus on quality and innovation, Veritas now boasts a
+              reputation for excellence, serving clients across the country with
+              integrity and distinction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="bg-base-300">
+    <div
+      class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
+    >
+      <div class="text-base-content sm:text-lg">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-base-content"
+        >
+          Innovative process
+        </h2>
+        <p class="mb-4">
+          Veritas Managed Solutions has continuously innovated our projects with <strong
+            >GAME drawings,</strong
+          > allowing you to have access to both a <strong
+            >high level overview</strong
+          > of your project, while also having access to the <strong
+            >fine details</strong
+          >
+          of your build in one document.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <Image
+          class="w-full rounded-lg"
+          src={gameexample1}
+          alt="Veritas engineer working on a GAME"
+        />
+        <Image
+          class="mt-4 w-full lg:mt-10 rounded-lg"
+          src={gameexample2}
+          alt="honeywell security drawing"
+        />
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #scramble {
+      font-family: "Roboto Mono", ui-monospace, monospace;
+    }
+    #title {
+      font-family: "Roboto Mono", ui-monospace;
+    }
+  </style>
+</MainLayout>
+<script src="../scripts/indexscript.ts"></script>

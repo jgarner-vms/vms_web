@@ -1,0 +1,198 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import avcover from "../assets/install_pictures/av/av.jpg";
+---
+
+<MainLayout>
+  <!-- Container for demo purpose -->
+  <div class="my-24 md:px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32">
+      <!-- Jumbotron -->
+      <div class="container mx-auto text-center lg:text-left xl:px-32">
+        <div class="flex flex-col-reverse lg:grid items-center lg:grid-cols-2">
+          <div class="mb-12 lg:mb-0">
+            <div
+              class="relative z-[1] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] bg-base-200 shadow-black/20 md:px-12 lg:-mr-14"
+            >
+              <h2 class="mb-8 text-3xl font-bold">Audio and visual systems</h2>
+              <p class="mb-8 pb-2 text-neutral-300 lg:pb-0">
+                <ul>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Audio and Video Conference Rooms</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Sound Masking</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Digital Signage</strong
+                    >
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent">Paging</strong>
+                  </li>
+                  <li>
+                    <strong class="font-semibold text-accent"
+                      >Sound Systems</strong
+                    >
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <Image
+            class="w-full rounded-lg shadow-lg shadow-black/20"
+            src={avcover}
+            alt="A Veritas audio video installation"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Jumbotron -->
+  </div>
+  <!-- Section: Design Block -->
+  <!-- Container for demo purpose -->
+  <div class="container mx-auto mb-12 lg:mb-0">
+    <div
+      class="relative z-[1] block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] bg-base-200 shadow-black/20 mx-5 md:px-12 lg:mx-32"
+    >
+      <h2 class="mb-8 text-3xl font-bold">
+        Other audio visual projects include:
+      </h2>
+
+      <div
+        class="mx-auto mb-8 flex flex-col md:justify-around lg:justify-between"
+      >
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Audio Systems
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas audio system installations include retail space speakers,
+          custom home theater systems, and PA systems in gyms, churches, or
+          wherever our customers need audio.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Video Systems
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas provides TV and media player installation and programming.
+          Projects range from single 55” touchscreens to full LED wall matrices.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Paging
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas provides audio sources, as well as the infrastructure and
+          networking of speaker arrays across large mall and warehouse sites.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Conference Rooms
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas provides cameras, microphones, speakers, and screens to meet
+          the conference room needs of both small businesses and corporate
+          C-Suites. Our designs include modular room sizing and various
+          videoconferencing software.
+        </p>
+
+        <p
+          class="mx-auto mb-4 flex items-center md:mx-0 md:mb-2 lg:mb-0 font-bold"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="mr-2 h-5 w-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            ></path>
+          </svg>
+          Sound Masking
+        </p>
+        <p class="my-2 text-neutral-300">
+          Veritas designs and installs sound cancelling and dampening systems,
+          scaled from a room to an entire building.
+        </p>
+      </div>
+    </div>
+  </div>
+</MainLayout>
